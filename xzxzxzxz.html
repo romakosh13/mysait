@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury-CARX36</title>
+    <style>
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+    <!-- Навигация между страницами -->
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px; margin-bottom: 20px; text-align: center;">
+        <button onclick="showPage('home')" style="margin: 5px; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Главная</button>
+        <button onclick="showPage('catalog')" style="margin: 5px; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Каталог-Авто</button>
+        <button onclick="showPage('tariffs')" style="margin: 5px; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Тарифы</button>
+        <button onclick="showPage('faq')" style="margin: 5px; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">Условия и вопросы</button>
+    </div>
+
+    <!-- Главная страница -->
+    <div id="home" class="page active" style="background-color: #f5f5f5; padding: 20px;">
+        <!-- Шапка сайта -->
+        <div style="width: 100%; border: 1px solid #ccc; padding: 10px; background-color: white;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div style="font-weight: bold;">Luxury-CARX36.</div>
+                <div style="display: flex; gap: 30px;">
+                    <span style="font-weight: bold; color: #007bff;">Каталог-Авто</span>
+                    <span>Тарифы</span>
+                    <span>Условия и вопросы</span>
+                </div>
+            </div>
+            
+            <!-- Главный баннер -->
+            <div style="position: relative; width: 100%; height: 400px; overflow: hidden;">
+                <img src="D:\sait\1766697862.png" alt="BMW" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3);"></div>
+                
+                <!-- Левый текст -->
+                <div style="position: absolute; top: 20px; left: 20px; color: white; max-width: 300px;">
+                    Только ухоженные, заправленные<br>
+                    и технически исправные автомобили
+                </div>
+                
+                <!-- Центральный текст -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">LUXURY-CARX36.</div>
+                    <div style="font-size: 18px; margin-bottom: 20px;">Крупнейший интернет-магазин аренды автомобилей любого класса<br>
+                    благодаря которому вы можете исполнить свою мечту</div>
+                    <div style="background-color: rgba(255,255,255,0.8); color: black; padding: 10px 20px; border-radius: 5px; display: inline-block; cursor: pointer;" onclick="showPage('catalog')">
+                        В каталог
+                    </div>
+                </div>
+                
+                <!-- Правые блоки с ценами -->
+                <div style="position: absolute; top: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="background-color: rgba(255,255,255,0.8); padding: 10px; border-radius: 5px; text-align: center; color: black;">
+                        Эконом<br>
+                        От 2000 Р в сутки
+                    </div>
+                    <div style="background-color: rgba(255,255,255,0.8); padding: 10px; border-radius: 5px; text-align: center; color: black;">
+                        Комфорт<br>
+                        От 2200 Р в сутки
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок "О нас" -->
+        <div style="border: 1px solid #ccc; padding: 20px; margin-top: 20px; background-color: white;">
+            <h2 style="text-align: center; margin-bottom: 15px;">О нас</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 2; padding-right: 20px;">
+                    Крупнейший из интернет-магазинов России<br>
+                    С арендой авто на нашем сайте, вы можете исполнить свою мечту детства,<br>
+                    также можете взять авто на прокат для свадьбы, дня рождения.<br>
+                    Наши клиенты, пользуясь нашими автомобилями всегда остаются довольными.
+                </div>
+                <div style="flex: 1; text-align: right;">
+                    Рабочий номер телефона: +89524290239<br>
+                    Горячая линия: +89512384292<br>
+                    Адрес: Воронеж ул.П.ехановская д.25
+                </div>
+            </div>
+            <div style="margin-top: 10px; font-size: 12px; color: #666;">
+                Luxury-CARX36, 10.02.2024 все права защищены.
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница FAQ -->
+    <div id="faq" class="page">
+        <!-- Шапка сайта -->
+        <div style="width: 100%; border: 1px solid black; padding: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div style="font-weight: bold;">Luxury-CARX36.</div>
+                <div style="display: flex; gap: 30px;">
+                    <span>Каталог-Авто</span>
+                    <span>Тарифы</span>
+                    <span style="font-weight: bold; color: #007bff;">Условия и вопросы</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Часто задаваемые вопросы -->
+        <div style="border: 1px solid black; padding: 20px; margin-top: 20px;">
+            <p style="font-weight: bold; margin-bottom: 20px;">Если возникнут другие вопросы, звоните +8 (951) 238-42-92. Колл-центр и техническая поддержка работают круглосуточно.</p>
+            
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <!-- Левая колонка с вопросами -->
+                <div style="flex: 0 0 30%; min-width: 250px;">
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        Часто задаваемые вопросы
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        Условия аренды авто
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        Минимальный Стаж?<br>
+                        Минимальный возраст?
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        За что и в каких их случаях берется залог?
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        Какой лимит пробега в сутки?
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; font-weight: bold;">
+                        Перечень основания для отказа клиентам в аренде
+                    </div>
+                </div>
+                
+                <!-- Правая колонка с ответами -->
+                <div style="flex: 1; min-width: 600px;">
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        <strong>САМЫЙ ГЛАВНЫЙ ВОПРОС.</strong><br><br>
+                        Как взять в аренду авто?-Сначала вы выбираете себе подходящее авто, дальше вы звоните по рабочему телефону который находится на главной странице, далее вам все подробности расскажут по телефону. Если на рабочем номере вам не ответили, звоните в горячую линию.
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        <strong>КАКИЕ ДОКУМЕНТЫ НУЖНЫ ДЛЯ АРЕНДЫ АВТО?</strong><br><br>
+                        Паспорт и права. Обязательно оригинал документов нужно принести с собой. Мы не выдаем авто по фото. Для представителей юр. лиц, необходимо иметь при себе доверенность на подписание договора и прием авто. При отсутствии правильно оформленной доверенности выдача будет не возможна.
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        Возраст не менее 20 лет, мин. стаж вождения 1 год.<br>
+                        По согласованию можно отойти от этих правил.<br>
+                        *Уважаемые молодые люди, обращаем ваше внимание, наличие стажа вождения в 1 год и достижения вами возраста 20 лет не гарантирует Вам выдачу авто и стандартные условия по залогу
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        Обычно мы берем только 5000 рублей на штрафы.<br>
+                        - Залог за авто возвращается при сдаче авто, 5 000 рублей остаются у нас из залоговой суммы до получения выгрузки со штрафами ПДД. Через 14 рабочих дней с момента возврата авто мы можем проверить Вас на штрафы и вернуть остаток залога.
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        - 300 км. в сутки. Лимит суммируется. То есть при аренде на 3 дня лимит пробега составит 900 км. Вы можете проехать это расстояние хоть за один день. Если вы хватит лимита переплата небольшая, 10 рублей за километр в сегменте эконом и стандарт, 15 рублей - комфорт и минивены, 20 рублей - авто премиум класса.
+                    </div>
+                    
+                    <div style="background-color: #ff4d4d; color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px;">
+                        Лица, не достигшие 18 лет, не имеющие стажа вождения 6 месяцев.<br>
+                        Лица старше 65 летнего возраста.<br>
+                        Лица в состоянии наркотического, токсикологического, алкогольного опьянения,<br>
+                        Лица, в отношении которых имеются возбужденные и оконченные исполнительные производства, с задолженностями на сумму более 300 000 рублей.
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; font-weight: bold;">
+                Цель нашей компании —<br>
+                предложение в аренду широкого ассортимента автомобилей и оборудования при неизменно высоком качестве обслуживания.
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница Каталога -->
+    <div id="catalog" class="page">
+        <!-- Шапка сайта -->
+        <div style="width: 100%; border: 1px solid black; padding: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div style="font-weight: bold;">Luxury-CARX36.</div>
+                <div style="display: flex; gap: 30px;">
+                    <span style="font-weight: bold; color: #007bff;">Каталог-Авто</span>
+                    <span>Тарифы</span>
+                    <span>Условия и вопросы</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Горячие предложения и Люкс-авто -->
+        <div style="border: 1px solid black; padding: 20px; margin-top: 20px; display: flex; gap: 30px;">
+            <div style="flex: 1;">
+                <h2 style="margin-bottom: 15px;">Горячие предложения</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="‪‪D:\sait\150x400 vesta.png" alt="Lada Vesta" style="border: 1px solid #ccc;">
+                        <div>
+                            Lada Vesta(2022).<br>
+                            Характеристики: 1.6 98 Л.С Газ/Бензин<br>
+                            Комфорт
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\150x400 (2).jpg" alt="Volkswagen Polo" style="border: 1px solid #ccc;">
+                        <div>
+                            Volkswagen Polo(2017)<br>
+                            Характеристики: 1.6 105 Л.С Бензин<br>
+                            Комфорт
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\150x400 (3) гранта.jpg" alt="Lada Granta" style="border: 1px solid #ccc;">
+                        <div>
+                            Lada Granta(2021).<br>
+                            Характеристики: 1.6 98 Л.С Бензин<br>
+                            Эконом
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\150x400 haval.jpg" alt="Haval M6" style="border: 1px solid #ccc;">
+                        <div>
+                            Haval M6(2023)<br>
+                            Характеристики: 1.6 150 Л.С<br>
+                            Комфорт
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="flex: 1;">
+                <h2 style="margin-bottom: 15px;">Люкс-авто</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\150x400 rolls.jpg" alt="Rolls-royce Cullinan" style="border: 1px solid #ccc;">
+                        <div>
+                            Rolls-royce Cullinan(2018)<br>
+                            Характеристики: 6.7 600 Л.С Бензин
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\m5f90.jpg" alt="Bmw M5F90 competition" style="border: 1px solid #ccc;">
+                        <div>
+                            Bmw M5F90 competition (2020)<br>
+                            Характеристики: 4.4 625 Л.С Бензин
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\m4.jpg" alt="Bmw M4" style="border: 1px solid #ccc;">
+                        <div>
+                            Bmw M4 (2020)<br>
+                            Характеристики: 3.0 431 Л.С Бензин
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; align-items: center;">
+                        <img src="D:\sait\gelik.jpg" alt="Mercedes Benz g63 amg" style="border: 1px solid #ccc;">
+                        <div>
+                            Mercedes Benz g63 amg(2022)<br>
+                            Характеристики: 4.0 585 Л.С Бензин
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница Тарифов -->
+    <div id="tariffs" class="page">
+        <!-- Шапка сайта -->
+        <div style="width: 100%; border: 1px solid black; padding: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div style="font-weight: bold;">Luxury-CARX36.</div>
+                <div style="display: flex; gap: 30px;">
+                    <span>Каталог-Авто</span>
+                    <span style="font-weight: bold; color: #007bff;">Тарифы</span>
+                    <span>Условия и вопросы</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица цен -->
+        <div style="border: 1px solid black; padding: 20px; margin-top: 20px;">
+            <div style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <div style="font-weight: bold; margin-bottom: 10px;">Стоимость аренды для Физических лиц граждан РФ</div>
+                    <table border="1" cellpadding="5" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th>Модель Автомобиля</th>
+                            <th>Тип трансмиссии</th>
+                        </tr>
+                        <tr>
+                            <td>BMW,Rolls-royce,Lada,Haval,Volkswagen,Mercedes</td>
+                            <td>Механика/Автомат Робот</td>
+                        </tr>
+                        <tr>
+                            <td>Lada Granta</td>
+                            <td>Механика</td>
+                        </tr>
+                        <tr>
+                            <td>Lada Vesta</td>
+                            <td>Механика</td>
+                        </tr>
+                        <tr>
+                            <td>Volkswagen Polo</td>
+                            <td>Автомат</td>
+                        </tr>
+                        <tr>
+                            <td>Haval M6</td>
+                            <td>Автомат</td>
+                        </tr>
+                        <tr>
+                            <td>BMW M4 Comp.</td>
+                            <td>Робот</td>
+                        </tr>
+                        <tr>
+                            <td>BMW M5F90 Comp.</td>
+                            <td>Робот</td>
+                        </tr>
+                        <tr>
+                            <td>Mercedez benz g63 AMG</td>
+                            <td>Робот</td>
+                        </tr>
+                        <tr>
+                            <td>Rolls-royce Culinan</td>
+                            <td>Автомат</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div style="flex: 1;">
+                    <div style="font-weight: bold; margin-bottom: 10px; text-align: center;">Стоимость аренды при лимите пробега до 400 км в сутки, в рублях.</div>
+                    <table border="1" cellpadding="5" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th>1-15 суток</th>
+                            <th>16-29 суток</th>
+                            <th>от 30 суток</th>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>1800</td>
+                            <td>1700</td>
+                        </tr>
+                        <tr>
+                            <td>2200</td>
+                            <td>2100</td>
+                            <td>1900</td>
+                        </tr>
+                        <tr>
+                            <td>2200</td>
+                            <td>2100</td>
+                            <td>1900</td>
+                        </tr>
+                        <tr>
+                            <td>3000</td>
+                            <td>2900</td>
+                            <td>2800</td>
+                        </tr>
+                        <tr>
+                            <td>7500</td>
+                            <td>7400</td>
+                            <td>7300</td>
+                        </tr>
+                        <tr>
+                            <td>9000</td>
+                            <td>8800</td>
+                            <td>8500</td>
+                        </tr>
+                        <tr>
+                            <td>12500</td>
+                            <td>12000</td>
+                            <td>11500</td>
+                        </tr>
+                        <tr>
+                            <td>20000</td>
+                            <td>19500</td>
+                            <td>17000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center; font-weight: bold; border-top: 2px solid black; padding-top: 10px;">
+                Цены на данный период времени: 15.05.2025
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Скрываем все страницы
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Показываем выбранную страницу
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
